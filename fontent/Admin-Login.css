@@ -16,14 +16,14 @@ body {
 
 h1 {
     font-size: 90px;
-    color: navy;
+    color: yellow;
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h3 {
-    color: navy;
+    color: yellow;
     font-size: 50px;
     padding: 0px;
     text-transform: uppercase;
