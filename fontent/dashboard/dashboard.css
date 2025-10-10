@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f4f6f9;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    background: #1e293b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header input {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+}
+
+#toggleDark {
+    background: #334155;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    padding: 2rem;
+}
+
+.kpi-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.kpi-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.kpi-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.add-btn {
+    margin: 1rem 0;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.inventory table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    background: #f1f5f9;
+}
+
+.actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #3b82f6;
+}
+
+.ok {
+    color: #16a34a;
+}
+
+.low {
+    color: #eab308;
+}
+
+.out {
+    color: #dc2626;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 320px;
+}
+
+.modal-content label {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.save-btn,
+.cancel-btn {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.save-btn {
+    background: #3b82f6;
+    color: white;
+}
+
+.cancel-btn {
+    background: #e5e7eb;
+}
+
+/* Dark Mode */
+body.dark {
+    background: #0f172a;
+    color: #f1f5f9;
+}
+
+body.dark header {
+    background: #334155;
+}
+
+body.dark .kpi-card,
+body.dark .inventory table,
+body.dark .chart-card,
+body.dark .modal-content {
+    background: #1e293b;
+    color: white;
+}
