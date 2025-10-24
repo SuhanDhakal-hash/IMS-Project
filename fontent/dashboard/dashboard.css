@@ -1,190 +1,110 @@
 * {
-    box-sizing: border-box;
-    font-family: "Segoe UI", sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    background: #f4f6f9;
-    color: #333;
-    transition: background 0.3s, color 0.3s;
-}
-
-header {
-    background: #1e293b;
-    color: white;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
+    height: 100vh;
+    background-color: lightgreen;
 }
 
-.controls {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-header input {
-    padding: 0.5rem;
-    border-radius: 4px;
-    border: none;
-}
-
-#toggleDark {
-    background: #334155;
+.sidebar {
+    width: 200px;
+    background: black;
     color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 20px;
 }
 
-main {
-    padding: 2rem;
+.sidebar ul {
+    list-style: none;
 }
 
-.kpi-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1rem;
+.sidebar ui li {
+    margin: 20px 0;
 }
 
-.kpi-card {
-    background: white;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+.sidebar ul li a {
+    text-decoration: none;
+    color: yellow;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #34343454;
+    color: #fff;
+}
+
+card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 1;
+    min-width: 200px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0. 1);
+    padding: 20px;
     text-align: center;
 }
 
-.kpi-card p {
-    font-size: 1.5rem;
+.card h3 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 24px;
     font-weight: bold;
-    margin-top: 0.5rem;
+    color: yellowgreen;
 }
 
-.add-btn {
-    margin: 1rem 0;
-    background: #3b82f6;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    cursor: pointer;
+table-section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 26px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0. 1);
+    text-align: top;
 }
 
-.inventory table {
+table {
     width: 100%;
     border-collapse: collapse;
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
+}
+
+.thread {
+    background: #1e1e2f;
+    color: #fff;
 }
 
 th,
 td {
-    padding: 0.75rem;
+    padding: 12px;
+    border-bottom: 1px solid ddd;
     text-align: left;
-    border-bottom: 1px solid #e5e7eb;
 }
 
-th {
-    background: #f1f5f9;
+tr:hover {
+    background-color: f1f1f1f1;
 }
 
-.actions button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #3b82f6;
-}
+@media(max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
 
-.ok {
-    color: #16a34a;
-}
+    card-container {
+        flex-direction: column;
+    }
 
-.low {
-    color: #eab308;
-}
-
-.out {
-    color: #dc2626;
-}
-
-/* Modal */
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hidden {
-    display: none;
-}
-
-.modal-content {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    width: 320px;
-}
-
-.modal-content label {
-    display: block;
-    margin-top: 0.5rem;
-}
-
-.modal-content input {
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.25rem;
-}
-
-.form-actions {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
-}
-
-.save-btn,
-.cancel-btn {
-    border: none;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-}
-
-.save-btn {
-    background: #3b82f6;
-    color: white;
-}
-
-.cancel-btn {
-    background: #e5e7eb;
-}
-
-/* Dark Mode */
-body.dark {
-    background: #0f172a;
-    color: #f1f5f9;
-}
-
-body.dark header {
-    background: #334155;
-}
-
-body.dark .kpi-card,
-body.dark .inventory table,
-body.dark .chart-card,
-body.dark .modal-content {
-    background: #1e293b;
-    color: white;
 }

@@ -5,111 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="dashboard.css">
 </head>
+<link rel="stylesheet" href="dashboard.css">
 
 <body>
-    <header>
-        <div class="logo">Inventory Management</div>
-        <nav>
-            <a href="#">Dashboard</a>
-            <a href="#products">Products</a>
-            <a href="#suppliers">Suppliers</a>
-            <a href="#orders">Orders</a>
-            <a href="#customers">Customers</a>
-        </nav>
-        <input type="text" id="search" placeholder="Search Products...">
-    </header>
-    <main>
-        <!-- KPI Cards -->
-        <section class="kpi-cards">
-            <div class="kpi-card">
-                <h3>Total Stock Value</h3>
-                <p id="stockValue">RS 120,000</p>
-            </div>
-            <div class="kpi-card">
-                <h3>Total Items</h3>
-                <p id="totalItems">560</p>
-            </div>
-            <div class="kpi-card">
-                <h3>Low Stock</h3>
-                <p id="lowStock">12</p>
-            </div>
-            <div class="kpi-card">
-                <h3>Out of Stock</h3>
-                <p id="outStock">5</p>
-            </div>
-        </section>
+    <div class="sidebar">
+        <h2>IMS</h2>
+        <ul>
+            <li><a href="#" id="Dashboardbtn">Dashboard</a></li>
+            <li><a href="#" id="productbtn">Product</a></li>
+            <li><a href="#" id="orderbtn">Orders</a></li>
+            <li><a href="#" id="suppliersbtn">Suppliers</a></li>
+            <li><a href="#" id="customersbtn">Customers</a></li>
+            <li><a href="#" id="logoutbtn">Logout</a></li>
+        </ul>
+    </div>
+    
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <h3>Total Product</h3>
+            <p id="totalProduct">8</p>
+        </div>
+        <div class="card">
+            <h3>Order</h3>
+            <p id="total Order">8</p>
+        </div>
+        <div class="card">
+            <h3>Total Suppilers</h3>
+            <p id="totalSupplier">8</p>
+        </div>
+        <div class="card">
+            <h3>Total Customers</h3>
+            <p id="totalCustomers">8</p>
+        </div>
 
-        <!-- ALERTS -->
-        <section class="alerts">
-            <h2>⚠️ Alerts</h2>
-            <ul id="alertsList">
-                <li>Product “Printer Ink” is below reorder level!</li>
-                <li>Product “Paper Ream” is out of stock!</li>
-            </ul>
-        </section>
-
-        <!-- INVENTORY TABLE -->
-        <section class="inventory">
-            <h2>📋 Inventory Overview</h2>
+        <section class="table-section">
+            <h2>Recent Product</h2>
             <table>
-                <thead>
+                <thread>
                     <tr>
+                        <th>ID</th>
+
                         <th>Product</th>
+                        <th>Stock</th>
                         <th>Category</th>
-                        <th>Quantity</th>
-                        <th>Reorder Level</th>
-                        <th>Location</th>
-                        <th>Status</th>
                     </tr>
-                </thead>
-                <tbody id="inventoryTable">
-                    <tr>
-                        <td>Printer Ink</td>
-                        <td>Office Supplies</td>
-                        <td>8</td>
-                        <td>10</td>
-                        <td>Warehouse A</td>
-                        <td class="low">Low Stock</td>
-                    </tr>
-                    <tr>
-                        <td>Paper Ream</td>
-                        <td>Office Supplies</td>
-                        <td>0</td>
-                        <td>5</td>
-                        <td>Warehouse A</td>
-                        <td class="out">Out of Stock</td>
-                    </tr>
-                    <tr>
-                        <td>Monitor</td>
-                        <td>Electronics</td>
-                        <td>25</td>
-                        <td>10</td>
-                        <td>Warehouse B</td>
-                        <td class="ok">In Stock</td>
-                    </tr>
-                </tbody>
+                    <tbody id="productTable">
+                    </tbody>
             </table>
+            </thread>
         </section>
-
-        <!-- CHARTS -->
-        <section class="charts">
-            <div class="chart-card">
-                <h2>Stock by Category</h2>
-                <canvas id="categoryChart"></canvas>
-            </div>
-            <div class="chart-card">
-                <h2>Top Selling Products</h2>
-                <canvas id="salesChart"></canvas>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 Inventory Management System</p>
-    </footer>
-
+    </div>
     <script src="script.js"></script>
 </body>
 

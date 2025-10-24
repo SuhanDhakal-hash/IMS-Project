@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Page Background */
+body {
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Container */
+.logout-container .card {
+    background: #fff;
+    padding: 2rem 3rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+/* Heading */
+.card h1 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+/* Paragraph */
+.card p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Logout Button */
+.btn.logout {
+    background-color: #ff4b5c;
+    color: #fff;
+}
+
+.btn.logout:hover {
+    background-color: #e63946;
+}
+
+/* Cancel Button */
+.btn.cancel {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.btn.cancel:hover {
+    background-color: #5a6268;
+}
