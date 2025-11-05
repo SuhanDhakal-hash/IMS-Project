@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page - Inventory Management System</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🧾 Order Management</h1>
+
+        <!-- Order Form -->
+        <form id="orderForm">
+            <input type="text" id="customerName" placeholder="Customer Name" required>
+            <select id="productSelect" required>
+                <option value="">Select Product</option>
+            </select>
+            <input type="number" id="orderQuantity" placeholder="Quantity" min="1" required>
+            <button type="submit">Add Order</button>
+        </form>
+
+        <!-- Orders Table -->
+        <h2>📋 Order List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Customer</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Total Price</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="orderTable"></tbody>
+        </table>
+    </div>
+
+    <script src="order.js"></script>
+</body>
+
+</html>
