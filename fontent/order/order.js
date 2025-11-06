@@ -6,7 +6,7 @@ const productSelect = document.getElementById("productSelect");
 const form = document.getElementById("orderForm");
 const table = document.getElementById("orderTable");
 
-// Populate product dropdown from inventory
+
 function loadProducts() {
     productSelect.innerHTML = '<option value="">Select Product</option>';
     inventory.forEach((item, index) => {
@@ -19,7 +19,7 @@ function loadProducts() {
     });
 }
 
-// Render orders table
+
 function renderOrders() {
     table.innerHTML = "";
     orders.forEach((order, index) => {
@@ -38,7 +38,7 @@ function renderOrders() {
     });
 }
 
-// Add order
+
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     const customer = document.getElementById("customerName").value.trim();
