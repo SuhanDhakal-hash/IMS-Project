@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Admin -Login Inventory Management System</title>
     <link rel="stylesheet" href="login.css">
-
 </head>
 
 <body>
@@ -24,13 +23,20 @@
                 <div class="LoginInputContainer">
                     <label for="">Passworrd</label>
                     <input type="password" placeholder="Passworrd">
-
+                </div>
+                <div class="option">
+                    <label>
+                        <input type="checkbox" id="rememberMe"> Remember me
+                    </label>
+                    <a href="#">Forgot password?</a>
                 </div>
                 <div class="LoginButtonContainer">
                     <button>LOGIN</button>
 
                 </div>
             </form>
+            <p id="error-message"></p>
+
         </div>
     </div>
 </body>
