@@ -4,60 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Inventory Dashboard</title>
+    <link rel="stylesheet" href="Dahboard.css">
 </head>
-<link rel="stylesheet" href="dashboard.css">
 
 <body>
-    <div class="sidebar">
-        <h2>IMS</h2>
+    <header>
+        <h1>Inventory Management Dashboard</h1>
+    </header>
+
+    <nav>
         <ul>
-            <li><a href="#" id="Dashboardbtn">Dashboard</a></li>
-            <li><a href="#" id="productbtn">Product</a></li>
-            <li><a href="#" id="orderbtn">Orders</a></li>
-            <li><a href="#" id="suppliersbtn">Suppliers</a></li>
-            <li><a href="#" id="customersbtn">Customers</a></li>
-            <li><a href="#" id="logoutbtn">Logout</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Suppliers</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Logout</a></li>
         </ul>
-    </div>
-    
-    </div>
-    <div class="card-container">
-        <div class="card">
-            <h3>Total Product</h3>
-            <p id="totalProduct">8</p>
-        </div>
-        <div class="card">
-            <h3>Order</h3>
-            <p id="total Order">8</p>
-        </div>
-        <div class="card">
-            <h3>Total Suppilers</h3>
-            <p id="totalSupplier">8</p>
-        </div>
-        <div class="card">
-            <h3>Total Customers</h3>
-            <p id="totalCustomers">8</p>
-        </div>
+    </nav>
 
-        <section class="table-section">
-            <h2>Recent Product</h2>
-            <table>
-                <thread>
-                    <tr>
-                        <th>ID</th>
-
-                        <th>Product</th>
-                        <th>Stock</th>
-                        <th>Category</th>
-                    </tr>
-                    <tbody id="productTable">
-                    </tbody>
-            </table>
-            </thread>
+    <main>
+        <section class="cards">
+            <div class="card">
+                <h3>Total Products</h3>
+                <p id="totalProducts">0</p>
+            </div>
+            <div class="card">
+                <h3>Total Suppliers</h3>
+                <p id="totalSuppliers">0</p>
+            </div>
+            <div class="card">
+                <h3>Orders Pending</h3>
+                <p id="ordersPending">0</p>
+            </div>
+            <div class="card">
+                <h3>Low Stock Items</h3>
+                <p id="lowStock">0</p>
+            </div>
         </section>
-    </div>
-    <script src="script.js"></script>
+
+        <section class="chart">
+            <h2>Stock Overview</h2>
+            <canvas id="stockChart" width="400" height="200"></canvas>
+        </section>
+    </main>
+
+
+
+    <script src="Dashboard.js"></script>
 </body>
 
 </html>
