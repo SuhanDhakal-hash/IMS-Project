@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing - Inventory Management System</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Payment</h1>
+
+        <div class="form-section">
+            <label for="product">Product:</label>
+            <select id="product">
+                <option value="Laptop" data-price="80000">Laptop - Rs. 80,000</option>
+                <option value="Mouse" data-price="800">Mouse - Rs. 800</option>
+                <option value="Keyboard" data-price="1500">Keyboard - Rs. 1,500</option>
+                <option value="Monitor" data-price="12000">Monitor - Rs. 12,000</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" placeholder="Enter quantity">
+
+            <button onclick="addToBill()">Add to Bill</button>
+        </div>
+
+        <h2>Bill Details</h2>
+        <table id="billTable">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div class="total-section">
+            <h3>Grand Total: Rs. <span id="grandTotal">0</span></h3>
+            <button id="printBill" onclick="printBill()">Print Bill</button>
+        </div>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+
+</html>

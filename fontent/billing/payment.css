@@ -1,41 +1,42 @@
 body {
-    background-image: url('registation.jpg');
     font-family: 'Poppins', sans-serif;
-    background: #f3f4f6;
+    background: #f0f2f5;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    min-height: 100vh;
 }
 
 .container {
-    background: lightblue;
-    padding: 30px 40px;
+    background: white;
+    padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    width: 400px;
+    width: 90%;
+    max-width: 700px;
 }
 
-h1 {
+h1,
+h2,
+h3 {
     text-align: center;
     color: #333;
-    margin-bottom: 25px;
 }
 
-.form-group {
+.form-section {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 label {
     font-weight: 500;
-    margin-bottom: 5px;
 }
 
+select,
 input,
-select {
+button {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -43,13 +44,8 @@ select {
 }
 
 button {
-    width: 100%;
-    padding: 10px;
     background: #007bff;
-    border: none;
-    border-radius: 8px;
     color: white;
-    font-size: 18px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -58,8 +54,35 @@ button:hover {
     background: #0056b3;
 }
 
-#message {
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
     text-align: center;
-    margin-top: 15px;
-    font-weight: bold;
+    padding: 8px;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+.total-section {
+    text-align: right;
+    margin-top: 20px;
+}
+
+#printBill {
+    margin-top: 10px;
+    width: 100%;
+    background: #28a745;
+}
+
+#printBill:hover {
+    background: #218838;
 }
