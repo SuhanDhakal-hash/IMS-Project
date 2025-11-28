@@ -15,14 +15,14 @@
             <h3>Inventory Management System</h3>
         </div>
         <div class="LoginBody">
-            <form action="">
+            <form action="login.php" method="post">
                 <div class="LoginInputContainer">
                     <label for="username">Username</label>
-                    <input type="text" placeholder=" Username" />
+                    <input type="text" name = "username" placeholder=" Username" />
                 </div>
                 <div class="LoginInputContainer">
                     <label for="">Passworrd</label>
-                    <input type="password" placeholder="Passworrd">
+                    <input type="password" name="password" placeholder="Passworrd">
                 </div>
                 <div class="option">
                     <label>
@@ -31,8 +31,7 @@
                     <a href="#">Forgot password?</a>
                 </div>
                 <div class="LoginButtonContainer">
-                    <button>LOGIN</button>
-
+                    <button name="Submit" type="submit">LOGIN</button>
                 </div>
             </form>
             <p id="error-message"></p>
