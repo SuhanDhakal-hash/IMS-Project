@@ -1,76 +1,28 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventory Management System</title>
-    <link rel="stylesheet" href="homepage.css">
-
+    <title>Inventory System - Registration</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div class="nav-brand">Inventory</div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#reports">Reports</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button id="login-btn" class="login-btn">Login</button>
-            <button id="register-btn" class="register-btn">Register</button>
-        </nav>
-    </header>
-    <a href="login.html">login </a>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Streamline Your Inventory Management</h1>
-                <p>Effortlessly track, manage, and optimize your stock with our intuitive system.</p>
-                <button class="cta-btn">Get Started</button>
-            </div>
-        </section>
+    <div class="container">
+        <h2>Inventory Management System</h2>
+        <h3>User Registration</h3>
 
-        <section id="features" class="section">
-            <h2>Key Features</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>Real-Time Tracking</h3>
-                    <p>Monitor inventory levels in real-time to avoid stockouts.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Automated Alerts</h3>
-                    <p>Get notifications for low stock and reorder points.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Easy Reporting</h3>
-                    <p>Generate customizable reports with one click.</p>
-                </div>
-            </div>
-        </section>
+        <form id="registerForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
 
-        <section id="reports" class="section">
-            <h2>Reports & Analytics</h2>
-            <p>Access detailed insights into your inventory performance, sales trends, and more.</p>
-            <button class="cta-btn">View Reports</button>
-        </section>
+            <button type="submit">Register</button>
+        </form>
 
-        <section id="contact" class="section">
-            <h2>Contact Us</h2>
-            <p>Have questions? Reach out to our team for support or demos.</p>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-    <script src="homepage.js"></script>
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
 </html>

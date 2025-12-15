@@ -1,45 +1,31 @@
 body {
-    background-image: url('registation.jpg');
-    font-family: 'Poppins', sans-serif;
-    background: #f3f4f6;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
 .container {
-    background: lightblue;
-    padding: 30px 40px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    width: 400px;
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 25px;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-}
-
-label {
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-
-input,
-select {
-    padding: 10px;
-    border: 1px solid #ccc;
+    background: #ffffff;
+    padding: 25px;
+    width: 350px;
     border-radius: 8px;
-    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 button {
@@ -47,11 +33,10 @@ button {
     padding: 10px;
     background: #007bff;
     border: none;
-    border-radius: 8px;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 button:hover {
@@ -60,6 +45,6 @@ button:hover {
 
 #message {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px;
     font-weight: bold;
 }
