@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin portal.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h2>Admin Dashboard</h2>
+        <a href="admin-login.html" class="logout">Logout</a>
+    </div>
+
+    <div class="container">
+        <h3>Manage Books</h3>
+
+        <form id="bookForm">
+            <input type="text" id="bookName" placeholder="Book Name" required>
+            <input type="text" id="category" placeholder="Category" required>
+            <input type="number" id="quantity" placeholder="Quantity" required>
+            <button type="submit">Add Book</button>
+        </form>
+
+        <h3>Book List</h3>
+        <table id="bookTable">
+            <thead>
+                <tr>
+                    <th>Book Name</th>
+                    <th>category</th>
+                    <th>Quantity</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+    </div>
+
+    <script src="admin portal.js"></script>
+</body>
+
+</html>

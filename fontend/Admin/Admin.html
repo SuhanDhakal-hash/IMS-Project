@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Admin -Login Inventory Management System</title>
+    <link rel="stylesheet" href="Admin.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="loginHeader">
+            <h1>IMS</h1>
+            <h3>Inventory Management System</h3>
+        </div>
+        <div class="LoginBody">
+            <form action="Admin.php" method="post">
+                <div class="LoginInputContainer">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" placeholder=" Username" />
+                </div>
+                <div class="LoginInputContainer">
+                    <label for="">Passworrd</label>
+                    <input type="password" name="password" placeholder="Passworrd">
+                </div>
+                <div class="option">
+                    <label>
+                        <input type="checkbox" id="rememberMe"> Remember me
+                    </label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <div class="LoginButtonContainer">
+                    <button name="Submit" type="submit">LOGIN</button>
+                </div>
+            </form>
+            <p id="error-message"></p>
+
+        </div>
+    </div>
+</body>
+
+</html>
