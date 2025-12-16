@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Management - Inventory System</title>
+    <link rel="stylesheet" href="category.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>📁 Category </h1>
+
+        <!-- Add/Edit Category Form -->
+        <form id="categoryForm">
+            <input type="hidden" id="categoryId">
+            <input type="text" id="categoryName" placeholder="Enter Category Name" required>
+            <input type="text" id="categoryDescription" placeholder="Enter Description">
+            <button type="submit">Add Category</button>
+        </form>
+
+        <!-- Search -->
+        <input type="text" id="searchCategory" placeholder="🔍 Search category by name...">
+
+        <!-- Category Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Category Name</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="categoryTable"></tbody>
+        </table>
+    </div>
+
+    <script src="category.js"></script>
+</body>
+
+</html>
